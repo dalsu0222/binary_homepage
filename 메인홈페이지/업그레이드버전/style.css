@@ -124,9 +124,9 @@ footer div{
     }
     .container .nav ul li{
         display:inline-block;
-        font-size: 10px;
+        font-size: 9px;
         margin-left: 0;
-        margin-right: 7px;
+        margin-right: 3px;
     }
     .container .hero .Welcome{
         font-size: 23px;
