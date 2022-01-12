@@ -120,24 +120,24 @@ footer div{
         width:92%;
     }
     .container .header h1{
-        font-size: 25px;
+        font-size: 22px;
     }
     .container .nav ul li{
         display:inline-block;
-        font-size: 13px;
+        font-size: 10px;
         margin-left: 0;
         margin-right: 7px;
     }
     .container .hero .Welcome{
-        font-size: 20px;
+        font-size: 23px;
     }
     .container .hero p{
-        font-size: 1px;
-    }
-    .container .hero button{
         font-size: 10px;
     }
+    .container .hero button{
+        font-size: 13px;
+    }
     footer{
-        font-size: 5px;
+        font-size: 8px;
     }
 }
