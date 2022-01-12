@@ -16,8 +16,8 @@
 .container{
     width:100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/후보2.png) center no-repeat fixed;
-    /* 위 코드는 깃허브에서 다음과 같이 작성.
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./후보2.png) center no-repeat fixed;
+    /* 위 코드는 visual studio code에서 다음과 같이 작성.
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./coding.jpg');
     */
     background-size: cover; /*( 화면 크기에 맞게 사진 크기 적용 )*/
@@ -103,6 +103,7 @@
     background-color: darkslategray;
 }
 
+/* 푸터 디자인 */ 
 footer div{
     color: white;
     text-align: center;
@@ -113,7 +114,7 @@ footer div{
     background: rgba(0,0,0,0.9);
     background-size: 80%;
 }
-
+/* 미디어쿼리적용, 반응형디자인(모바일에서의 창) 구현 */
 @media(max-width:787px){
     .container .header{
         width:92%;
