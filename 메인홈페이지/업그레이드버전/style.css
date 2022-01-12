@@ -117,10 +117,10 @@ footer div{
 /* 미디어쿼리적용, 반응형디자인(모바일에서의 창) 구현 */
 @media(max-width:787px){
     .container .header{
-        width:92%;
+        width:97%;
     }
     .container .header h1{
-        font-size: 22px;
+        font-size: 20px;
     }
     .container .nav ul li{
         display:inline-block;
