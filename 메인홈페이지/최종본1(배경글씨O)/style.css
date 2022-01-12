@@ -18,7 +18,7 @@
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./후보2.png) center no-repeat fixed;
     /* 위 코드는 visual studio code에서 다음과 같이 작성.
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/후보2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/후보2.png);
     */
     background-size: cover; /*( 화면 크기에 맞게 사진 크기 적용 )*/
 }
