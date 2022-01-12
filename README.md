@@ -11,8 +11,8 @@
    
    이렇게 파일 3개를 올리면   
    https://dalsu0222.github.io/binary_homepage/메인홈페이지/아진  
-   https://dalsu0222.github.io/binary_homepage/메인홈페이지/도성
-   https://dalsu0222.github.io/binary_homepage/메인홈페이지/은서  
+   https://dalsu0222.github.io/binary_homepage/메인홈페이지/도성  
+   https://dalsu0222.github.io/binary_homepage/메인홈페이지/은서   
    이 링크에서 본인이 만든 홈페이지를 호스팅해서 볼 수 있어!!(내꺼니까 내이름을 링크에 적어놨는데 링크에서 본인 이름으로 바꿔서 접속하면돼)  
     
 
