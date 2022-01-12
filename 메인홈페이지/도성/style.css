@@ -40,7 +40,7 @@
 .container .nav ul li a:hover{
   color:#2bee3c;
 }
-.container .sentence{
+.container .nav{
   position:absolute;
   left:50%;
   top:50%;
@@ -49,14 +49,14 @@
   text-align:center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container .sentence h2{
+.container .nav h2{
   font-size:60px;
   margin-bottom:20px;
 }
-.container .sentence p{
+.container .nav p{
   font-size:22px;
 }
-.container .sentence button{
+.container .nav button{
   background:none;
   border:2px solid rgb(40, 231, 40);
   color:white;
@@ -67,6 +67,6 @@
   cursor:pointer;
   transition:all .4s;
 }
-.container .sentence button:hover{
+.container .nav button:hover{
   background-color:darkslategray;
 }
