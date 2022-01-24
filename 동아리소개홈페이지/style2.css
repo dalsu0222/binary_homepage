@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Source+Code+Pro&display=swap');
+@font-face{
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff');
+} 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container{
+  width:1200px;
+  margin:20px auto;
+}
+.container.header{
+  width:100%;
+  height:120px;
+  background-color: white;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.container .header h1 a{
+  text-decoration: none;
+  color: rgba(53, 201, 102, 0.986); 
+  font-family: 'Source Code Pro', monospace;
+}
+.container .nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+.container .nav ul li a{
+  text-decoration: none;
+  color: rgba(0, 128, 0, 0.623);
+  font-family: 'Noto Serif KR', serif;
+
+}
+.container .nav ul li a:hover{
+  color: rgba(53, 201, 102, 0.986);
+}
+.nav{
+  float: 50px 50px;
+}
+aside{
+  margin:40px auto;
+  width: 150px;
+  height:650px;
+  background-color:white;
+  float:left;
+  border: 3px solid green;
+}
+section{
+  margin:40px auto;
+  width:1200px;
+  height:650px;
+  background-color:white;
+  border: 3px solid green;
+}
+footer{
+  width:1200px;
+  height:40px;
+  clear:left;
+  border-top:3px solid green;
+}
