@@ -8,20 +8,33 @@
   padding:0;
   box-sizing:border-box;
 }
+/* container -> 넓이를 기존 1200px->1400 px 로 조정(pc 큰화면 접속시 더 꽉차보이게 하기 위함
+margin-top:0px 으로 하여 더 꽉차보이게 함
+*/
 .container{
-  width:1200px;
-  margin:20px auto;
-}
-.container.header{
-  width:100%;
-  height:120px;
-  background-color: white;
+  width:1400px;    
   margin:0 auto;
+}
+/* 배경 설정, 글자 수직 위치 조정(수직 정중앙 말고 약간 아랫부분에 글씨 위치), 글씨 색깔 검정->하양 으로 변경 */
+.container .header{
+  height:120px;
+  /* background-color: black; */
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/coding.jpg) center no-repeat fixed;
+  margin:0 auto;
+  padding-top: 20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
+.container .header h1{
+    width:20%;
+}
+.container .header .nav{
+    width:80%;
+    margin-left: 600px;
+}
 .container .header h1 a{
+  padding-left: 50px;
   text-decoration: none;
   color: rgba(53, 201, 102, 0.986); 
   font-family: 'Source Code Pro', monospace;
@@ -32,7 +45,8 @@
 }
 .container .nav ul li a{
   text-decoration: none;
-  color: rgba(0, 128, 0, 0.623);
+  /* color: rgba(0, 128, 0, 0.623); */
+  color : white;
   font-family: 'Noto Serif KR', serif;
 
 }
@@ -51,26 +65,54 @@ h3{
 p{
   text-align:center;
 }
+
 aside{
   margin:40px auto;
-  width: 150px;
-  height:650px;
+  margin-top: 70px;
+  padding-top: 50px;
+  width: 300px;
+  height:1600px;
   background-color:white;
   float:left;
   border: 3px solid green;
 }
-section{
+/* h2 태그 제외 적용(글씨가 전반적으로 아래로 밀려나는 현상 방지) 
+행간 알맞게 조정(가독성을 위함)
+*/
+section:not(h2){
+  line-height: 2.4;
   margin:40px auto;
-  width:1200px;
-  height:650px;
+  margin-top: 70px;
+  padding-top: 50px;
+  width:1400px;
+  height:1600px;
   background-color:white;
   border: 3px solid green;
 }
+section h2{
+    line-height: 0;
+}
+/* footer 배경 설정, 높이 변경, 행간 조정 등 */
 footer{
-  width:1200px;
-  height:40px;
+  width:1400px;
+  height:120px;
+  margin-top: 50px;
+  padding-top: 20px;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/coding.jpg) center no-repeat fixed;
   clear:left;
-  font-size: x-small;
+  font-size: small;
+  color:white;
   text-align: center;
+  line-height: 2;
   border-top:3px solid green;
+}
+/* footer 링크 색깔 변경 */
+footer a:link{
+    color: white;
+}
+footer a:hover{
+    color: greenyellow;
+}
+footer a:visited{
+    color: green;
 }
