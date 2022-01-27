@@ -105,6 +105,7 @@ footer{
   text-align: center;
   line-height: 2;
   border-top:3px solid green;
+  font-family: 'Noto Serif KR', serif;
 }
 /* footer 링크 색깔 변경 */
 footer a:link{
