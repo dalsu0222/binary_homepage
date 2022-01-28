@@ -97,7 +97,7 @@ footer{
   height:120px;
   margin-top: 50px;
   padding-top: 20px;
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/coding.jpg) center no-repeat fixed;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./coding.jpg) center no-repeat fixed;
   clear:left;
   font-size: small;
   color:white;
