@@ -19,7 +19,7 @@ margin-top:0px 으로 하여 더 꽉차보이게 함
 .container .header{
   height:120px;
   /* background-color: black; */
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/coding.jpg) center no-repeat fixed;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./coding.jpg) center no-repeat fixed;
   margin:0 auto;
   padding-top: 20px;
   display:flex;
