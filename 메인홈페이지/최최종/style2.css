@@ -8,11 +8,9 @@
   padding:0;
   box-sizing:border-box;
 }
-/* container -> 넓이를 기존 1200px->1400 px 로 조정(pc 큰화면 접속시 더 꽉차보이게 하기 위함
-margin-top:0px 으로 하여 더 꽉차보이게 함
-*/
 .container{
-  width:1200px;    
+  /* width:1200px;     */
+  width:100%;
   margin:0 auto;
 }
 /* 배경 설정, 글자 수직 위치 조정(수직 정중앙 말고 약간 아랫부분에 글씨 위치), 글씨 색깔 검정->하양 으로 변경 */
@@ -28,10 +26,11 @@ margin-top:0px 으로 하여 더 꽉차보이게 함
 }
 .container .header h1{
     width:20%;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .container .header .nav{
-    width:80%;
-    margin-left: 400px;
+    width:700px;
 }
 .container .header h1 a{
   padding-left: 50px;
@@ -64,36 +63,44 @@ h3{
 p{
   text-align:center;
 }
-
+.wrap{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
 aside{
-  margin:40px auto;
+  margin:0;
   margin-top: 70px;
   padding-top: 50px;
-  width: 200px;
+  width: 17%;
   height:1600px;
   background-color:white;
   float:left;
   border: 3px solid green;
+  border-right: none;
+
+  
 }
 /* h2 태그 제외 적용(글씨가 전반적으로 아래로 밀려나는 현상 방지) 
 행간 알맞게 조정(가독성을 위함)
 */
 section:not(h2){
   line-height: 2.4;
-  margin:40px auto;
+  
   margin-top: 70px;
   padding-top: 50px;
-  width:1200px;
+  width:70%;
   height:1600px;
   background-color:white;
   border: 3px solid green;
 }
+
 section h2{
     line-height: 0;
 }
 /* footer 배경 설정, 높이 변경, 행간 조정 등 */
 footer{
-  width:1200px;
+  width:100%;
   height:120px;
   margin-top: 50px;
   padding-top: 20px;
