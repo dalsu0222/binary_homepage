@@ -15,7 +15,7 @@
 }
 /* 배경 설정, 글자 수직 위치 조정(수직 정중앙 말고 약간 아랫부분에 글씨 위치), 글씨 색깔 검정->하양 으로 변경 */
 .container .header{
-  height:120px;
+  height:80px;
   /* background-color: black; */
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./coding.jpg) center no-repeat fixed;
   margin:0 auto;
