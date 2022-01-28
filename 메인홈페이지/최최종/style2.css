@@ -32,6 +32,9 @@
 .container .header .nav{
     width:700px;
 }
+#now{
+ color:  rgba(53, 201, 102, 0.986); 
+}
 .container .header h1 a{
   padding-left: 50px;
   text-decoration: none;
