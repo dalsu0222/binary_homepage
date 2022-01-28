@@ -80,9 +80,9 @@ aside{
   height:1600px;
   background-color:white;
   float:left;
-  border: 3px solid green;
+  border: 2px solid green;
   border-right: none;
-
+  border-radius: 15px 0 0 15px;
   
 }
 /* h2 태그 제외 적용(글씨가 전반적으로 아래로 밀려나는 현상 방지) 
@@ -96,7 +96,8 @@ section:not(h2){
   width:70%;
   height:1600px;
   background-color:white;
-  border: 3px solid green;
+  border: 2px solid green;
+  border-radius: 0 15px 15px 0;
 }
 
 section h2{
