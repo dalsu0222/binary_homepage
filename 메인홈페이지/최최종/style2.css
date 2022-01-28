@@ -19,7 +19,7 @@
   /* background-color: black; */
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./coding.jpg) center no-repeat fixed;
   margin:0 auto;
-  padding-top: 20px;
+  
   display:flex;
   justify-content:space-between;
   align-items:center;
