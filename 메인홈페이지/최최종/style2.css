@@ -70,6 +70,7 @@ p{
   display: flex;
   justify-content:center;
   align-items: center;
+  background-color:white;
 }
 aside{
   margin:0;
