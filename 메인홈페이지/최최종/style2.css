@@ -12,7 +12,7 @@
 margin-top:0px 으로 하여 더 꽉차보이게 함
 */
 .container{
-  width:1400px;    
+  width:1200px;    
   margin:0 auto;
 }
 /* 배경 설정, 글자 수직 위치 조정(수직 정중앙 말고 약간 아랫부분에 글씨 위치), 글씨 색깔 검정->하양 으로 변경 */
@@ -31,7 +31,7 @@ margin-top:0px 으로 하여 더 꽉차보이게 함
 }
 .container .header .nav{
     width:80%;
-    margin-left: 600px;
+    margin-left: 400px;
 }
 .container .header h1 a{
   padding-left: 50px;
@@ -69,7 +69,7 @@ aside{
   margin:40px auto;
   margin-top: 70px;
   padding-top: 50px;
-  width: 300px;
+  width: 200px;
   height:1600px;
   background-color:white;
   float:left;
@@ -83,7 +83,7 @@ section:not(h2){
   margin:40px auto;
   margin-top: 70px;
   padding-top: 50px;
-  width:1400px;
+  width:1200px;
   height:1600px;
   background-color:white;
   border: 3px solid green;
@@ -93,7 +93,7 @@ section h2{
 }
 /* footer 배경 설정, 높이 변경, 행간 조정 등 */
 footer{
-  width:1400px;
+  width:1200px;
   height:120px;
   margin-top: 50px;
   padding-top: 20px;
