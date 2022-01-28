@@ -24,7 +24,7 @@
 
 /*------ 4. 헤더 부분 만들기 ------*/
 .container .header{
-    width: 83%;
+    width: 82%;
     height: 80px;
     margin: 0 auto;
     display: flex;
