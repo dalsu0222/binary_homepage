@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Source+Code+Pro&display=swap');
+@font-face{
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff');
+} 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container{
+  /* width:1200px;     */
+  width:100%;
+  margin:0 auto;
+}
+/* 배경 설정, 글자 수직 위치 조정(수직 정중앙 말고 약간 아랫부분에 글씨 위치), 글씨 색깔 검정->하양 으로 변경 */
+.container .header{
+  height:80px;
+  /* background-color: black; */
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./coding.jpg) center no-repeat fixed;
+  margin:0 auto;
+  
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.container .header h1{
+    width:20%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.container .header .nav{
+    width:700px;
+}
+.container .header h1 a{
+  padding-left: 50px;
+  text-decoration: none;
+  color: rgba(53, 201, 102, 0.986); 
+  font-family: 'Source Code Pro', monospace;
+}
+#now{
+  color:  rgba(53, 201, 102, 0.986); 
+ }
+.container .nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+.container .nav ul li a{
+  text-decoration: none;
+  /* color: rgba(0, 128, 0, 0.623); */
+  color : white;
+  font-family: 'Noto Serif KR', serif;
+}
+.container .nav ul li a:hover{
+  color: rgba(53, 201, 102, 0.986);
+}
+.nav{
+  float: 50px 50px;
+}
+h2{
+  text-align:center;
+}
+h3{
+  text-align:center;
+}
+p{
+  text-align:center;
+}
+.wrap{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color:white;
+}
+aside{
+  margin:0;
+  margin-top: 70px;
+  padding-top: 50px;
+  width: 17%;
+  height:1600px;
+  background-color:white;
+  float:left;
+  border: 2px solid green;
+  border-right: none;
+  border-radius: 15px 0 0 15px;
+  
+}
+/* h2 태그 제외 적용(글씨가 전반적으로 아래로 밀려나는 현상 방지) 
+행간 알맞게 조정(가독성을 위함)
+*/
+section:not(h2){
+  line-height: 2.4;
+  
+  margin-top: 70px;
+  padding-top: 50px;
+  width:70%;
+  height:1600px;
+  background-color:white;
+  border: 2px solid green;
+  border-radius: 0 15px 15px 0;
+}
+
+section h2{
+    line-height: 0;
+}
+/* footer 배경 설정, 높이 변경, 행간 조정 등 */
+footer{
+  width:100%;
+  height:120px;
+  margin-top: 50px;
+  padding-top: 20px;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./coding.jpg) center no-repeat fixed;
+  clear:left;
+  font-size: small;
+  color:white;
+  text-align: center;
+  line-height: 2;
+  border-top:3px solid green;
+  font-family: 'Noto Serif KR', serif;
+}
+/* footer 링크 색깔 변경 */
+footer a:link{
+    color: white;
+}
+footer a:hover{
+    color: greenyellow;
+}
+footer a:visited{
+    color: green;
+}
