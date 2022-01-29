@@ -101,3 +101,7 @@
 .container .hero button:hover{
     background-color: darkslategray;
 }
+button a{
+    text-decoration: none;
+    color:white;
+}
