@@ -93,7 +93,7 @@ aside{
   font-weight: bolder;
   font-size:small;
   text-align: center;
-  margin-bottom: 2375px;        /* section 높이 값에 따라 사이드바의 margin-bottom 값도 조정 */
+  margin-bottom: auto;        /* section 높이 값에 따라 사이드바의 margin-bottom 값도 조정 */
   
 }
 .wrap aside p{
@@ -116,7 +116,7 @@ section:not(h2){
   margin-top: 70px;
   padding-top: 50px;
   width:70%;
-  height:2700px;
+  height:auto;
   background-color:white;
   border: 2.5px solid green;
   border-radius: 0 15px 15px 0;
