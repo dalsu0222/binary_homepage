@@ -81,7 +81,7 @@ aside{
   margin-top: 70px;
   padding-top: 50px;
   width: 17%;
-  height:380px;
+  height:auto;
   background-color:rgba(53, 201, 102, 0.1);
   float:left;
   border: 2.5px solid green;
@@ -112,6 +112,7 @@ aside{
 행간 알맞게 조정(가독성을 위함)
 */
 section:not(h2){
+  height:auto;
   line-height: 2.4;
   margin-top: 70px;
   padding-top: 50px;
