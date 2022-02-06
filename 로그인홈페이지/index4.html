@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Binary LOGIN</title>
+  <link rel="stylesheet" href="style4.css">
+  <!-- on('click')과 addClass는 jquery에서 제공하기 때문에 넣음 -->
+  <script src="#"></script>
+</head>
+
+<body>
+  <section class="login-form">
+    <!-- 로그인 제목 -->
+    <h1>binary; LOGIN</h1>
+    <form action="">
+      <!-- 학번부분 박스 -->
+      <div class="int-area">
+        <input type="text" name="id" id="id" autocomplete="on" required>
+        <label for="id">STUDENT ID</label>
+      </div>
+      <!-- 비밀번호부분 박스 -->
+      <div class="int-area">
+        <!-- autocomplete사용:on로 자동완성 기능 사용함 -->
+        <input type="password" name="pw" id="pw" autocomplete="on" required>
+        <label for="pw">PASSWORD</label>
+      </div>
+      <!-- 로그인 버튼 -->
+      <div class="btn-area">
+        <button type="submit">LOGIN</button>
+      </div>
+    </form>
+    <!-- 비밀번호 찾기 버튼 -->
+    <div class="caption">
+      <a href="#">Forgot Password?</a>
+    </div>
+  </section>
+  <!-- <script>
+    let id = document.querySelector('#id')
+    let pw = document.querySelector('#pw')
+    let btn = document.querySelector('#btn')
+
+    btn.addEventListener('click', () => {
+      if (id.value == "") {
+        label = id.nextElementSibling
+        label.classList.add('warning')
+        setTimeout(() => {
+          label.classList.remove('warning')
+        }, 1500)
+      } else if (pw.value == "") {
+        label = pw.nextElementSibling
+        label.classList.add('warning')
+        setTimeout(() => {
+          label.classList.remove('warning')
+        }, 1500)
+      }
+    })
+  </script> -->
+</body>
+
+</html>
