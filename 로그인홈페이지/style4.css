@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   height:100vh;
-  background: url("#") no-repeact center;
+  background: url("/images/coding.jpg") no-repeat center;
   background-size:cover;
 }
 /* 가상선택자 before 사용으로 해당 태그 앞에 놓이게 함,배경화면 검은색 */
@@ -19,11 +19,8 @@ body::before{
   content: "";
   position:absolute; 
   z-index:1;
-  top:0;
-  right:0;
-  bottom:0;
-  left: 0;
-  background-color: black;
+  top:0;    right:0;    bottom:0;   left: 0;
+  background-color: rgba(0,0,0,0.6);
 }
 /* 로그인 폼 z-index 이용하여 수직위치 상승, position:위치 조절 가능 */
 .login-form{
