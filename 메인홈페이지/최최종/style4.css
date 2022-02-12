@@ -3,8 +3,21 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+}\
+/* 헤더부분 로고 위치 설정 */
+.header {
+  display: flex;
+  position: absolute;
+  top:20px;
+  left:144px;
+  z-index: 3;
 }
-
+/* 헤더부분 하이퍼링크 서식 설정 */
+.header a{
+  text-decoration: none;
+  text-decoration-line: none;
+  color:rgba(53, 201, 102, 0.986);
+}
 /* 비밀번호 옆 아이콘을 처음엔 눈감은 아이콘만 보이게 설정*/
 .login-form .int-area .eye{
   position: absolute;
@@ -18,10 +31,11 @@
 body{
   font-family: 'Source Code Pro', monospace;
   display:flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   height:100vh;
-  background: url("/coding.jpg") no-repeat center;
+  background: url(./coding.jpg) no-repeat center;
   background-size:cover;
 }
 /* 가상선택자 before 사용으로 해당 태그 앞에 놓이게 함,배경화면 검은색 */
