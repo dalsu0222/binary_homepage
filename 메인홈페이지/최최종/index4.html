@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>binary; LOGIN</title>
-  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="_style copy.css">
   <!-- on('click')과 addClass는 jquery에서 제공하기 때문에 넣음 -->
   <script src="#"></script>
   <!-- google에서 icon을 불러오는 링크 -->
@@ -14,14 +14,13 @@ rel="stylesheet">
 </head>
 
 <body>
-    
-<!--왼쪽상단 바이너리 로고 띄우기 (미완성, 공부중) <div class="header">
-<h1><a href="index.html">binary;</a></h1>
-</div>-->
-
+<!-- 왼쪽상단 바이너리 로고 띄우기 -->
+<div class="header">
+<h1><a href="#">binary;</a></h1>
+</div>
   <section class="login-form">
     <!-- 로그인 제목 -->
-    <h1><a href="index.html">binary;</a></h1>
+    <h1><a href="index.html">LOGIN</a></h1>
     <form action="">
       <!-- 학번부분 박스 -->
       <div class="int-area">
@@ -55,6 +54,7 @@ rel="stylesheet">
       <a href="PasswordFind.html" target="_blank">Forgot Password?</a>
     </div>
   </section>
+
   <!-- 비밀번호 보이게/안보이게 하기 함수(js) -->
   <script>
     function myFunction(){
@@ -75,27 +75,6 @@ rel="stylesheet">
     }
   </script>
 
-
-  <!-- (jquery 적용 방법 아직 미완성) <script>
-    let id = document.querySelector('#id')
-    let pw = document.querySelector('#pw')
-    let btn = document.querySelector('#btn')
-    btn.addEventListener('click', () => {
-      if (id.value == "") {
-        label = id.nextElementSibling
-        label.classList.add('warning')
-        setTimeout(() => {
-          label.classList.remove('warning')
-        }, 1500)
-      } else if (pw.value == "") {
-        label = pw.nextElementSibling
-        label.classList.add('warning')
-        setTimeout(() => {
-          label.classList.remove('warning')
-        }, 1500)
-      }
-    })
-  </script> -->
-
 </body>
+
 </html>
