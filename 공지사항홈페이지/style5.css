@@ -3,6 +3,7 @@
     font-family: abster;
     src:url(font/abster-webfont.woff) format('woff');
 } 
+/* 폰트 지정 */
 *{
   margin:0;
   padding:0;
@@ -25,39 +26,48 @@ margin-top:0px 으로 하여 더 꽉차보이게 함
   justify-content:space-between;
   align-items:center;
 }
+/* 상단 로고 넓이와 마진 지정 */
 .container .header h1{
     width:20%;
     margin-left: 100px;
     margin-right: 100px;
 }
+/* 상단 메뉴바 넓이 지정 */
 .container .header .nav{
     width:700px;
 }
+/* 로고와 메뉴바 색, 패딩,폰트 등 지정 */
 .container .header h1 a{
   padding-left: 50px;
   text-decoration: none;
   color: rgba(53, 201, 102, 0.986); 
   font-family: 'Source Code Pro', monospace;
 }
+/* 동아리 소개부분 색(초록) 지정 */
 #now{
   color:  rgba(53, 201, 102, 0.986); 
  }
+ /* 메뉴바 마진, 요소스타일 지정 */
 .container .nav ul li{
   display: inline-block;
   margin: 0 10px;
 }
+/* 상단 메뉴바 부분 */
 .container .nav ul li a{
   text-decoration: none;
   /* color: rgba(0, 128, 0, 0.623); */
   color : white;
   font-family: 'Noto Serif KR', serif;
 }
+/* 마우스 포인터가 올라가 있을 때 변화(메뉴바)*/
 .container .nav ul li a:hover{
   color: rgba(53, 201, 102, 0.986);
 }
+/* 메뉴바 부분 */
 .nav{
   float: 50px 50px;
 }
+/* h2,h3,p모두 센터로 텍스트 맞춤 */
 h2{
   text-align:center;
 }
@@ -144,26 +154,26 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+/* 바디부분 공지사항 표 부분 패딩 */
 .board_list_wrap {
     padding: 50px;
 }
-
+/* 공지사항 표 해드부분 표내용 부분 폰트 사이즈랑 패딩 */
 .board_list_head,
 .board_list_body .item {
     padding: 10px 0;
     font-size: 0;
 }
-
+/* 해드부분 경계선 크기와 색 지정 */
 .board_list_head {
     border-top: 2px solid green;
     border-bottom: 1px solid #ccc;
 }
-
+/* 표내용 부분 경계선 크기, 색 지정 */
 .board_list_body .item {
     border-bottom: 1px solid #ccc;
 }
-
+/* 번호, 제목, 글쓴이, 작성일 등 바디부분 제목,표내용 부분 */
 .board_list_head > div,
 .board_list_body .item > div {
     display: inline-block;
@@ -186,19 +196,19 @@ a {
 .board_list_body div.tit {
     text-align: left;
 }
-
+/* 마우스 커서가 올라가 있을 때 변화 */
 .board_list_body div.tit a:hover {
     text-decoration: underline;
 }
-
+/* 공지사항 글쓴이부분 */
 .board_list .writer {
     width: 10%;
 }
-
+/* 공지사항 작성일 부분 */
 .board_list .date {
     width: 15%;
 }
-
+/* 공지사항 조회 부분 */
 .board_list .view {
     width: 10%;
 }
@@ -227,12 +237,12 @@ a {
     text-align: center;
     line-height: 25px;
 }
-
+/* 바디 하단 부분 다음 페이지, 전 페이지 부분 */
 .paging a.bt:hover {
     background-color: #999;
     color:green;
 }
-
+/* 1,2,3 다음 페이지 화살표 부분들 */
 .paging a.first {
     background-position: 10px -40px;
 }
@@ -258,7 +268,23 @@ a {
 .paging a.num.on {
     color: green;
 }
-
+/* 공지사항 하단 부분 숫자 표시 부분 마우스 커서 올려져 있을 때 변화 지정 */
 .paging a.num:hover {
     text-decoration: underline;
+}
+/* 글쓰기 버튼 부분 */
+.container button{
+   position:absolute;
+   right:350px;
+   top:155px;
+   background: none;
+   border: 2px solid green;
+   color: black;
+   padding: 10px 15px;
+   border-radius: 20px;
+   margin-top: 20px;
+   outline: none; 
+   cursor: pointer; 
+   transition: all .4s;
+
 }
