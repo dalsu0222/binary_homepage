@@ -28,7 +28,7 @@
             	%>
                 <ul>
                     <li><a href="../login/login.jsp">LOGIN</a></li>
-                    <li><a href="#">공지사항</a></li>    
+                    <li><a href="../notice/noticeList.jsp">공지사항</a></li>    
                     <li><a href="../prize/prize.jsp">수상내역</a></li>      
                     <li><a href="../info/info.jsp">동아리 소개</a></li>   
                     <li><a href="#">문의 게시판</a></li>
@@ -39,7 +39,7 @@
             	%>
 				<ul>
                     <li><a href="../login/logoutAction.jsp">LOGOUT</a></li>
-                    <li><a href="#">공지사항</a></li>    
+                    <li><a href="../notice/noticeList.jsp">공지사항</a></li>    
                     <li><a href="../prize/prize.jsp">수상내역</a></li>      
                     <li><a href="../info/info.jsp">동아리 소개</a></li>   
                     <li><a href="#">문의 게시판</a></li>
