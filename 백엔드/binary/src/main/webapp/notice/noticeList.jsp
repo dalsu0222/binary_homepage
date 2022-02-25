@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="user.UserDAO" %>
 <%@ page import="java.io.PrintWriter" %>
 <%@ page import="notice.NoticeDAO" %>
 <%@ page import="notice.Notice" %>
@@ -82,15 +83,16 @@
                   <!-- 표 내용 부분 -->
                   	<%
 		                NoticeDAO noticeDAO = new NoticeDAO();
+                  		UserDAO userDAO = new UserDAO();
 		                ArrayList<Notice> list = noticeDAO.getList(pageNumber);
 		                for(int i = 0; i < list.size(); i++){
 	                %>
                     <div class="item">
                     	<div class="num"><%= list.get(i).getNoticeNum() %></div>
-                        <div class="tit"><a href="noticeView.jsp?noticeNum=<%= list.get(i).getNoticeNum() %>"><%= list.get(i).getNoticeTitle() %></a></div>
-                        <div class="writer"><%= list.get(i).getUserID() %></div>
+                        <div class="tit"><a href="noticeView.jsp?noticeNum=<%= list.get(i).getNoticeNum() %>"><%= list.get(i).getNoticeTitle().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></a></div>
+                        <div class="writer"><%= userDAO.userName(list.get(i).getUserID()) %></div>
                         <div class="date"><%= list.get(i).getNoticeDate().substring(0, 11) %></div>
-                        <div class="view"><%= list.get(i).getNoticeNum() %></div>
+                        <div class="view"><%= list.get(i).getNoticeCount() %></div>
                     </div>
                     <%
 	                }
@@ -125,13 +127,13 @@
               		<a href="noticeList.jsp?pageNumber=<%= pageNumber + 1 %>" class="num"><%= pageNumber + 1 %></a>
                 	<a href="noticeList.jsp?pageNumber=<%= pageNumber + 2 %>" class="num"><%= pageNumber + 2 %></a>
 	                <a href="noticeList.jsp?pageNumber=<%= pageNumber + 1 %>" class="bt next">&gt;</a>
-	                <a href="noticeList.jsp?pageNumber=<%= pageNumber + 2 %>" class="bt last">&gt;&gt;</a>
+	                <a href="noticeList.jsp?pageNumber=<%= noticeDAO.totalPages() %>" class="bt last">&gt;&gt;</a>
               	<%		
               		} else if(noticeDAO.nextPage(pageNumber + 1)){
               	%>
               		<a href="noticeList.jsp?pageNumber=<%= pageNumber + 1 %>" class="num"><%= pageNumber + 1 %></a>
 	                <a href="noticeList.jsp?pageNumber=<%= pageNumber + 1 %>" class="bt next">&gt;</a>
-	                <a href="noticeList.jsp?pageNumber=<%= pageNumber + 1 %>" class="bt last">&gt;&gt;</a>
+	                <a href="noticeList.jsp?pageNumber=<%= noticeDAO.totalPages() %>" class="bt last">&gt;&gt;</a>
               	<%		
               		}
               	%>

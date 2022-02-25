@@ -111,6 +111,25 @@ a {
     text-align: center;
     font-size: 0;
 }
+.bt_wrap button {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor:pointer;
+}
+/* 등록, 취소 먼저 고려되는 것 */
+.bt_wrap button:first-child {
+    margin-left: 0;
+}
+
+.bt_wrap button.on {
+    background: #000;
+    color: #fff;
+}
 /* 목록과 수정의 위치 지정과 넓이 마진, 경계,폰트 등 지정 */
 .bt_wrap a {
     display: inline-block;

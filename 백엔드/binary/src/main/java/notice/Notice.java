@@ -7,7 +7,14 @@ public class Notice {
 	private String noticeDate;
 	private String noticeContent;
 	private String noticeAvailable;
+	private int noticeCount;
 	
+	public int getNoticeCount() {
+		return noticeCount;
+	}
+	public void setNoticeCount(int noticeCount) {
+		this.noticeCount = noticeCount;
+	}
 	public int getNoticeNum() {
 		return noticeNum;
 	}
