@@ -55,7 +55,7 @@ rel="stylesheet">
     </form>
     <!-- 비밀번호 찾기 버튼 -->
     <div class="caption">
-      <a href="findPassword.jsp" target="_blank">Forgot Password?</a>
+      <a href="findPassword.jsp">Forgot Password?</a>
     </div>
   </section>
   <!-- 비밀번호 보이게/안보이게 하기 함수(js) -->

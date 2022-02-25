@@ -29,8 +29,8 @@
                 <ul>
                     <li><a href="../login/login.jsp">LOGIN</a></li>
                     <li><a href="#">공지사항</a></li>    
-                    <li><a href="../prize/prize.html">수상내역</a></li>      
-                    <li><a href="../info/info.html">동아리 소개</a></li>   
+                    <li><a href="../prize/prize.jsp">수상내역</a></li>      
+                    <li><a href="../info/info.jsp">동아리 소개</a></li>   
                     <li><a href="#">문의 게시판</a></li>
                     <li><a href="#">활동 게시판</a></li>
                 </ul>
@@ -40,8 +40,8 @@
 				<ul>
                     <li><a href="../login/logoutAction.jsp">LOGOUT</a></li>
                     <li><a href="#">공지사항</a></li>    
-                    <li><a href="../prize/prize.html">수상내역</a></li>      
-                    <li><a href="../info/info.html">동아리 소개</a></li>   
+                    <li><a href="../prize/prize.jsp">수상내역</a></li>      
+                    <li><a href="../info/info.jsp">동아리 소개</a></li>   
                     <li><a href="#">문의 게시판</a></li>
                     <li><a href="#">활동 게시판</a></li>
                 </ul>            	
@@ -54,7 +54,7 @@
         <div class="hero">
             <h2 class="Welcome">WELCOME BINARY; CLUB</h2>
             <p>세종대학교 바이너리 동아리에 오신 여러분 환영합니다!<br></p>
-            <button><a href="../info/info.html">About binary;</a></button>
+            <button><a href="../info/info.jsp">About binary;</a></button>
         </div>
     </div>
 </body>

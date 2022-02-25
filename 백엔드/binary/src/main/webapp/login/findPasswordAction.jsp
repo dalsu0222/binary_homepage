@@ -6,13 +6,14 @@
 <jsp:useBean id="user" class="user.User" scope="page" />
 <jsp:setProperty name="user" property="userID" />
 <jsp:setProperty name="user" property="userPassword" />
+<jsp:setProperty name="user" property="userPassword2" />
+<jsp:setProperty name="user" property="userName" />
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <title>binary; LOGIN</title>
-  <link rel="stylesheet" href="style4.css">
 </head>
 
 <body>
@@ -29,18 +30,12 @@
 			script.println("</script>");
 		}
 		UserDAO userDAO = new UserDAO();
-		int result = userDAO.login(user.getUserID(), user.getUserPassword());
-		if (result == 1){
-			session.setAttribute("userID", user.getUserID());
+		int result = userDAO.changePassword(user.getUserID(), user.getUserName(), user.getUserPassword(), user.getUserPassword2());
+		
+		if (result == 0){
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
-			script.println("location.href = '../main/main.jsp'");
-			script.println("</script>");
-		}
-		else if (result == 0){
-			PrintWriter script = response.getWriter();
-			script.println("<script>");
-			script.println("alert('비밀번호가 틀립니다.')");
+			script.println("alert('존재하지 않는 이름입니다.')");
 			script.println("history.back()");
 			script.println("</script>");
 		}
@@ -56,6 +51,20 @@
 			script.println("<script>");
 			script.println("alert('데이터베이스 오류가 발생했습니다.')");
 			script.println("history.back()");
+			script.println("</script>");
+		}
+		else if (result == -3){
+			PrintWriter script = response.getWriter();
+			script.println("<script>");
+			script.println("alert('비밀번호가 일치하지 않습니다.')");
+			script.println("history.back()");
+			script.println("</script>");
+		}
+		else {
+			session.setAttribute("userID", user.getUserID());
+			PrintWriter script = response.getWriter();
+			script.println("<script>");
+			script.println("location.href = 'login.jsp'");
 			script.println("</script>");
 		}
 	%>

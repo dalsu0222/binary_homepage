@@ -24,8 +24,8 @@ rel="stylesheet">
 
   <section class="login-form">
     <!-- 로그인 제목 -->
-    <h1><a href="../main/main.html">binary;</a></h1>
-    <form action="loginAction.jsp">
+    <h1><a href="../main/main.jsp">binary;</a></h1>
+    <form action="findPasswordAction.jsp">
       <!-- 학번부분 박스 -->
       <div class="int-area">
         <input type="text" name="userID" id="userID" autocomplete="on" required>
@@ -35,12 +35,11 @@ rel="stylesheet">
       <div class="int-area">
         <!-- autocomplete사용:on로 자동완성 기능 사용함 -->
         <input type="text" name="userName" id="userName" autocomplete="on" required>
-        <label for="userPassword">NAME</label>
+        <label for="userName">NAME</label>
       </div>
       <!-- 비밀번호부분 박스 -->
       <div class="int-area">
-        <!-- autocomplete사용:on로 자동완성 기능 사용함 -->
-        <input type="password" name="userPassword" id="userPassword" autocomplete="on" required>
+        <input type="password" name="userPassword" id="userPassword" required>
         <label for="userPassword">NEW PASSWORD</label>
         <!-- google에서 eye 아이콘들을 추가하여 
           아이콘을 클릭했을때 맨 하단의 함수(myFunction())가 작동하도록 함-->
@@ -55,9 +54,8 @@ rel="stylesheet">
       </div>
       <!-- 비밀번호확인부분 박스 -->
       <div class="int-area">
-        <!-- autocomplete사용:on로 자동완성 기능 사용함 -->
-        <input type="password" name="userPassword2" id="userPassword2" autocomplete="on" required>
-        <label for="userPassword">CONFIRM NEW PASSWORD</label>
+        <input type="password" name="userPassword2" id="userPassword2" required>
+        <label for="userPassword2">CONFIRM NEW PASSWORD</label>
         <!-- google에서 eye 아이콘들을 추가하여 
           아이콘을 클릭했을때 맨 하단의 함수(myFunction())가 작동하도록 함-->
         <span class="eye2" onclick="myFunction2()"> 
@@ -74,6 +72,7 @@ rel="stylesheet">
           <!-- 로그인 버튼 이름 : submit -->
         <button type="submit" name="submit" id="submit">CHANGE PASSWORD</button>
       </div>
+      
     </form>
   </section>
   <script>

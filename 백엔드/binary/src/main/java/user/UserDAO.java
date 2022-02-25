@@ -43,4 +43,33 @@ public class UserDAO {
 		return -2; // 데이터베이스 오류
 	}
 	
+	public int changePassword(String userID, String userName, String userPassword, String userPassword2) {
+		String SQL1 = "SELECT userName FROM USERINFO WHERE userID = ?";
+		String SQL2 = "UPDATE USERINFO SET userPassword = ? WHERE userID = ?";
+		try {
+			pstmt = conn.prepareStatement(SQL1);
+			pstmt.setString(1, userID);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				if(rs.getString(1).equals(userName)) {
+					if(userPassword.equals(userPassword2)) {
+						pstmt = conn.prepareStatement(SQL2);
+						pstmt.setString(1, userPassword2);
+						pstmt.setString(2, userID);
+						return pstmt.executeUpdate(); // 비밀번호 변경 성공
+					}
+					else {
+						return -3; // 비밀번호 불일치
+					}
+				}
+				else
+					return 0; // 아이디, 이름 불일치
+			}
+			return -1; // 아이디가 없음
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -2; // 데이터베이스 오류
+	}
+	
 }
